@@ -22,3 +22,5 @@ include: "/2_intermediate_lookml/intermediate_example_ecommerce_validated_orders
 # explore: intermediate_example_ecommerce_validated_orders {
 # }
 # Note: `intermediate_example_ecommerce_validated_orders` is included above, so it exists in this model.
+
+include: "*.dashboard"

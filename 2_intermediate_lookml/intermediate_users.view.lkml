@@ -93,6 +93,33 @@ view: intermediate_users {
     map_layer_name:countries
   }
 
+  dimension: currency {
+    case: {
+      when: {
+        sql: ${country} = "China" ;;
+        label: "¥"
+      }
+      when: {
+        sql: ${country} = "United States" ;;
+        label: "$"
+      }
+      when: {
+        sql: ${country} = "Brasil" ;;
+        label: "R$"
+      }
+      when: {
+        sql: ${country} = "South Korea" ;;
+        label: "₩"
+      }
+      when: {
+        sql: ${country} = "France" ;;
+        label: "€"
+      }
+      else: "$"
+    }
+  }
+
+
   measure: count {
     label: "# of Users"
     type: count
