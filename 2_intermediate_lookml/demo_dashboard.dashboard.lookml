@@ -628,20 +628,20 @@
     col: 8
     width: 16
     height: 4
-  - type: button
-    name: button_77
-    rich_content_json: '{"text":"Demo Dashboard 1","description":"","newTab":false,"alignment":"center","size":"medium","style":"FILLED","color":"#056364","href":"https://3f5a4544-0668-40ad-8d82-67dfce14fbad.looker.app/dashboards/6"}'
-    row: 0
-    col: 0
-    width: 12
-    height: 1
-  - type: button
-    name: button_90
-    rich_content_json: '{"text":"Demo Dashboard 2","description":"","newTab":false,"alignment":"center","size":"medium","style":"FILLED","color":"#056364","href":"https://3f5a4544-0668-40ad-8d82-67dfce14fbad.looker.app/dashboards/7"}'
-    row: 0
-    col: 12
-    width: 12
-    height: 1
+  # - type: button
+  #   name: button_77
+  #   rich_content_json: '{"text":"Demo Dashboard 1","description":"","newTab":false,"alignment":"center","size":"medium","style":"FILLED","color":"#056364","href":"https://3f5a4544-0668-40ad-8d82-67dfce14fbad.looker.app/dashboards/6"}'
+  #   row: 0
+  #   col: 0
+  #   width: 12
+  #   height: 1
+  # - type: button
+  #   name: button_90
+  #   rich_content_json: '{"text":"Demo Dashboard 2","description":"","newTab":false,"alignment":"center","size":"medium","style":"FILLED","color":"#056364","href":"https://3f5a4544-0668-40ad-8d82-67dfce14fbad.looker.app/dashboards/7"}'
+  #   row: 0
+  #   col: 12
+  #   width: 12
+  #   height: 1
   filters:
   - name: Country
     title: Country
