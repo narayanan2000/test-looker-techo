@@ -123,7 +123,7 @@ view: intermediate_users {
   measure: count {
     label: "# of Users"
     type: count
-    drill_fields: [id,created_at_date,first_name,last_name,gender,country,traffic_source]
+    drill_fields: [state, count]
   }
 
 }
