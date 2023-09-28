@@ -14,6 +14,12 @@ explore: intermediate_example_ecommerce {
   from: intermediate_order_items
   view_name: order_items # Optionally use `view_name` to change how you reference the view in this Explore.
   label: "2) Intermediate Ecommerce" # Change the label used for the Explore in the UI, i.e. the human readable name
+
+  access_filter:{
+    field: users.country
+    user_attribute: country_rls
+  }
+
   join: users { # Technically, join name sets an alias: how the view joined view will be referred to in this Explore, For example, this aliasing is used when you need two joins to the same view (for example, imagine we have one users table which we want to join twice, for buyer and seller).
     from: intermediate_users #If the join/alias does not match the LookML view name, set the LookML view to use with this from parameter.
     type: left_outer
