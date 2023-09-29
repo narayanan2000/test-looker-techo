@@ -11,7 +11,7 @@ access_grant: can_view_Intermediate_Ecommerce_explore {
 
 include: "/2_intermediate_lookml/*.view.lkml"
 
-# Tip: Give Explores a meaningful name related to the use case they serve.
+# Tip:h  Give Explores a meaningful name related to the use case they serve.
 # Consider that Explore names appear in URLs, and try to help future developers with a descriptive name.
 explore: intermediate_example_ecommerce {
   required_access_grants: [can_view_Intermediate_Ecommerce_explore]
