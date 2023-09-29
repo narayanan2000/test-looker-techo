@@ -1,6 +1,6 @@
 
 - dashboard: demo_embed
-  title: Demo LookML Dashboard
+  title: Demo LookML Dashboard2
   layout: newspaper
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
