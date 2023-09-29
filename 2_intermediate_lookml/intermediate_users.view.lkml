@@ -8,6 +8,11 @@
 # Some find this minimalist LookML style more readable, others disagree and prefer more explicit declarations.
 ###
 
+access_grant: can_view_user_email {
+  user_attribute: user_email_access
+  allowed_values: [ "yes" ]
+}
+
 view: intermediate_users {
 
   # sql_table_name: `bigquery-public-data.thelook_ecommerce.users`;; # In this view, we use a derived table as the source table instead of using `sql_table_name`. The derived table allows us to append some summary information to users.
@@ -49,7 +54,9 @@ view: intermediate_users {
 
   dimension: last_name {}
 
-  dimension: email {}
+  dimension: email {
+    required_access_grants: [can_view_user_email]
+  }
 
   dimension: age {
     type: number

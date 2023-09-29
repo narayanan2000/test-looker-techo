@@ -4,11 +4,17 @@
 #   - Limiting/removing fields from the Explore when fields are in the source table but are not relevant
 ###
 
+access_grant: can_view_Intermediate_Ecommerce_explore {
+  user_attribute: intermediate_ecommerce_explore_access
+  allowed_values: [ "yes" ]
+}
+
 include: "/2_intermediate_lookml/*.view.lkml"
 
 # Tip: Give Explores a meaningful name related to the use case they serve.
 # Consider that Explore names appear in URLs, and try to help future developers with a descriptive name.
 explore: intermediate_example_ecommerce {
+  required_access_grants: [can_view_Intermediate_Ecommerce_explore]
   # Use the `from` parameter to specify what view object to use as the base view,
   # if the view name is different from the Explore name.
   from: intermediate_order_items
