@@ -62,10 +62,14 @@ view: intermediate_order_items {
     timeframes: [raw,time,date,week,month,quarter,year]
   }
 
-  dimension: created_at1 {
-    type: string
-    sql: FORMAT_DATE('%x', ${created_at_date}) ;;
-  }
+  # dimension: date_formatted {
+  #   sql: ${created_at_date} ;;
+  #   html:{{ rendered_value | date: "%m-%d-%Y" }};;
+
+  # dimension: created_at1 {
+  #   type: string
+  #   sql: FORMAT_DATE('%x', ${created_at_date}) ;;
+  # }
 
   dimension_group: shipped_at {
     group_label: "Other Dates"
