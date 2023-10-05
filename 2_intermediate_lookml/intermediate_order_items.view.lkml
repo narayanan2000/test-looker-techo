@@ -62,6 +62,11 @@ view: intermediate_order_items {
     timeframes: [raw,time,date,week,month,quarter,year]
   }
 
+   dimension: date_formatted {
+    sql: ${created_at_date} ;;
+    html:{{ rendered_value | date: "%m-%d-%Y" }};;
+  }
+
   dimension_group: shipped_at {
     group_label: "Other Dates"
     type: time
