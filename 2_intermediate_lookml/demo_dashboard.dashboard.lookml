@@ -1,5 +1,5 @@
 - dashboard: demo_dashboard
-  title: Demo Dashboard1
+  title: Demo Dashboard3
   layout: newspaper
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
@@ -8,7 +8,7 @@
   elements:
   - title: Country [user count > 1500]
     name: Country [user count > 1500]
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_column
     fields: [users.country, users.count]
@@ -85,7 +85,7 @@
     height: 8
   - title: Total Users
     name: Total Users
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: single_value
     fields: [users.count]
@@ -113,7 +113,7 @@
     height: 2
   - title: Top 5 sold Categories
     name: Top 5 sold Categories
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_pie
     fields: [products.category, order_items.total_sale_price]
@@ -183,7 +183,7 @@
     height: 6
   - title: Total Sales
     name: Total Sales
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: single_value
     fields: [order_items.total_sale_price]
@@ -213,7 +213,7 @@
     height: 2
   - title: Sales by Month
     name: Sales by Month
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_line
     fields: [order_items.total_sale_price, order_items.shipped_at_month]
@@ -284,7 +284,7 @@
     height: 6
   - title: Total Orders
     name: Total Orders
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: single_value
     fields: [order_items.count]
@@ -310,7 +310,7 @@
     height: 2
   - title: Average Price
     name: Average Price
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: single_value
     fields: [order_items.average_sale_price]
@@ -337,7 +337,7 @@
     height: 2
   - title: Sales by Year and Sales Medium
     name: Sales by Year and Sales Medium
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_column
     fields: [users.traffic_source, order_items.total_sale_price, order_items.shipped_at_year]
@@ -388,7 +388,7 @@
     height: 6
   - title: Sales formatted by country currency
     name: Sales formatted by country currency
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_grid
     fields: [users.country, order_items.total_sale_price, users.currency]
@@ -488,7 +488,7 @@
     height: 4
   - title: Donut chart
     name: Donut chart
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     type: looker_donut_multiples
     fields: [products.count, users.count, order_items.count, products.category]
@@ -569,7 +569,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     listens_to_filters: []
     field: users.country
@@ -583,7 +583,7 @@
       type: advanced
       display: popover
       options: []
-    model: intermediate_ecomm
+    model: temp_project
     explore: intermediate_example_ecommerce
     listens_to_filters: []
     field: order_items.shipped_at_date
