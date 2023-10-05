@@ -1,5 +1,5 @@
 - dashboard: demo_dashboard
-  title: Demo Dashboard3
+  title: Demo Dashboard3 Dev
   layout: newspaper
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
